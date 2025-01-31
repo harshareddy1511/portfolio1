@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .nav-buttons {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .nav-buttons button {
+            padding: 12px 20px;
+            margin: 5px;
+            border: none;
+            background-color: #0073b1;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #005a8c;
+        }
+
+        section {
+            padding: 30px;
+            background: #fff;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        h2 {
+            color: #34495e;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .contact a {
+            color: #0073b1;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Harsha Vardhan Reddy Mallela</h1>
+        <p>Professional AI Engineer</p>
+    </header>
+    <div class="container">
+        <div class="nav-buttons">
+            <button onclick="showSection('about')">About</button>
+            <button onclick="showSection('experience')">Experience</button>
+            <button onclick="showSection('education')">Education</button>
+            <button onclick="showSection('skills')">Skills</button>
+            <button onclick="showSection('contact')">Contact</button>
+        </div>
+        <section id="about" class="active">
+            <h2>About Me</h2>
+            <p>Hi! I’m Harsha Vardhan Reddy Mallela, an AI Engineering undergraduate at KPR Institute of Engineering. I’m deeply passionate about artificial intelligence, machine learning, and data-driven solutions. My areas of interest include deep learning, computer vision, and natural language processing, and I’m always looking to work on projects that push my technical skills further. I’m excited about exploring new technologies and developing intelligent systems that can tackle real-world challenges. I’m always eager to learn, collaborate, and contribute to the ever-evolving field of AI through both research and practical applications.</p>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Campus Ambassador</strong> - Let's Upgrade ([Start Year] - [End Year or Present])</li>
+                <li><strong>Python Programmer</strong> - Codesoft ([Start Year] - [End Year])</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B-tech</strong> - KPR Institute of Technology (2026)</li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>SQL</li>
+                <li>HTML & CSS</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:harshareddyvardhan15112003@gmail.com">harshareddyvardhan15112003@gmail.com</a></p>
+            <p>Phone: 9392304799</p>
+            <p>LinkedIn: <a href="[Your LinkedIn Profile URL]" target="_blank">LinkedIn Profile</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Harsha Vardhan Reddy Mallela. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
